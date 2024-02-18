@@ -1,3 +1,3 @@
-# cronicas_felinas_ottoko
+# Crónicas Felinas
 
-[CRÓNICAS FELINAS](cronicas_felina_f.pdf)
+[Parte 1](cronicas_felina_parte1.pdf)

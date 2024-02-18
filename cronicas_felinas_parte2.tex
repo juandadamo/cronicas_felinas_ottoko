@@ -1,0 +1,57 @@
+%\documentclass[smalldemyvopaper,11pt,twoside,onecolumn,openright,extrafontsizes]{memoir}
+\documentclass[20pt,oneside,openright,extrafontsizes,landscape,a5paper]{memoir}
+\usepackage{yfonts,color,hyperref}
+\def\initdefault{yinit}
+\usepackage{fontspec}
+%\usepackage[T1]{inputenc}
+\usepackage{fontspec}
+\usepackage[spanish]{babel}
+\usepackage{xsavebox} %save content for repeated use
+\usepackage{atbegshi} %insert material on every page
+\usepackage[x11names,dvipsnames]{xcolor} 
+\usepackage{wrapfig}  
+\usepackage{tikz}
+\usepackage[tmargin=1.cm,bmargin=1cm,lmargin=2cm,rmargin=1cm]{geometry}
+%\usepackage[margin=1cm]{geometry}% for screen preview
+\usepackage{graphicx}
+\usepackage{lipsum}  
+\setmainfont{juan_letra_reg}
+%\DeclareFontFamily{LYG}{OldNewspaperTypes}{}
+
+%\AtBeginShipout{
+	%	\AtBeginShipoutUpperLeft{\raisebox{-\height}{\xusebox{PageBGPicture}}}
+	%}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\usetikzlibrary{calc}
+\usepackage{relsize}
+\tikzset{fontscale/.style = {font=\relsize{#1}}
+}
+\setlength\parindent{0pt}
+\graphicspath{{images/}}
+\begin{document}
+	%\begin{normal}
+	
+	\pagenumbering{gobble}
+	\noindent
+	\begin{tikzpicture}[remember picture, overlay]
+		\node [inner sep=0pt, minimum width=\paperwidth, minimum height=\paperheight] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,angle=0]{portada}};
+	\end{tikzpicture}
+	%\iffalse
+	
+
+
+
+%
+%\input{introduccion.tex}	
+\input{primera_salida.tex}
+%\input{reflexiones_casa.tex}
+%\input{segunda_salida.tex}
+%\input{geometria_amor.tex}
+%\input{castillo.tex}
+%\input{castillo2.tex}
+%\input{reflexiones.tex}
+%\input{museo.tex}
+\end{document}
